@@ -1,0 +1,92 @@
+.header {
+    min-height: 100vh;
+    background-image: linear-gradient(109deg, 
+        #fcfafd 0%, 
+        #fcfafd 66%,  
+        transparent 38%), 
+        url(../img/1.jpg);
+    background-size: cover, 40.4%;
+    background-position: left, top right;
+    background-repeat: no-repeat, no-repeat;
+
+    &__text-box { 
+        position: absolute;
+        top: 50%;  
+        left: 50%;
+        transform: translate(-85%, -50%); 
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    font-family: Julius Sans One; 
+
+    & > * {
+        display: block;
+    }  
+
+    &--main {
+        font-size: 9rem;
+        font-weight: 300; 
+        letter-spacing: 1.8rem; 
+
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+    }
+
+    &--sub {
+        font-size: 3.6rem;
+        font-weight: 500;
+        letter-spacing: 4.49rem;
+        transform: $--sub-offset;
+
+        animation-name: moveInRight;
+        animation-duration: 3s;
+
+        & span {
+            -webkit-text-stroke: .14rem $color-black;
+            -webkit-text-fill-color: transparent;
+            color: $color-black;
+        }
+    }
+
+    &--caption {
+        font-family: Open Sans;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: .2rem;
+        padding: 2.5rem 0;
+        color: $color-black-light;
+
+        animation-name: fadeIn;
+        animation-duration: 3s; 
+
+        & span {
+            display: inherit;
+            padding-top: 0.6rem;
+        }
+    }
+}
+
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none; 
+        border-bottom: 1px solid black;
+        display: inline-block;
+
+        animation-name: moveInBottom;
+        animation-duration: 3s;  
+        
+        font-family: Open Sans;
+        font-size: 2.7rem;
+        letter-spacing: .5rem;
+        color: $color-black;
+        transition: all .2s;
+    }
+
+    &:hover {
+        color: $color-black-light;
+        border-color: $color-black-light;
+    }
+}
