@@ -80,6 +80,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
   position: fixed;
   width: 100%;
   padding: 1.5rem 5rem; }
@@ -88,7 +89,7 @@ body {
     text-decoration: none;
     font-family: Julius Sans One;
     text-align: center;
-    transform: translateY(10px);
+    transform: translateY(1rem);
     transition: all .3s; }
   .navigation__logo > * {
     display: block; }
@@ -118,6 +119,49 @@ body {
     transition: all .3s; }
   .navigation__link:hover {
     color: #787878; }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__list {
+    display: none; }
+  .navigation__button {
+    display: inherit;
+    height: calc((0.8rem * 2) + (0.2rem * 3));
+    align-items: center;
+    order: 1;
+    cursor: pointer; }
+  .navigation__icon {
+    position: relative; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 3rem;
+      height: 0.2rem;
+      background-color: #000;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0; }
+    .navigation__icon::before {
+      top: -0.8rem; }
+    .navigation__icon::after {
+      top: 0.8rem; }
+  .navigation__checkbox:checked + .navigation__button,
+  .navigation__checkbox:checked ~ .navigation__logo {
+    z-index: 9; }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    background-color: #FCFAFD;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .navigation__checkbox:checked ~ .navigation__nav > .navigation__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .header {
   min-height: 100vh;
