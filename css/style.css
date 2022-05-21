@@ -134,7 +134,7 @@ body {
       display: none; }
     .navigation__button {
       display: inherit;
-      height: calc((0.8rem * 2) + (0.2rem * 3));
+      height: calc((0.8rem * 2) + (2px * 3));
       align-items: center;
       order: 1;
       cursor: pointer; }
@@ -142,7 +142,7 @@ body {
       position: relative; }
       .navigation__icon, .navigation__icon::before, .navigation__icon::after {
         width: 3rem;
-        height: 0.2rem;
+        height: 2px;
         background-color: #000;
         display: inline-block; }
       .navigation__icon::before, .navigation__icon::after {
