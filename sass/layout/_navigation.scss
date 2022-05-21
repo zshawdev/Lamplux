@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 1;
 
     position: fixed;
     width: 100%;
@@ -116,7 +116,7 @@
           
         &__checkbox:checked + &__button, 
         &__checkbox:checked ~ &__logo {
-            z-index: 9; //put atop all
+            z-index: 1;
         }
     
         &__checkbox:checked ~ &__nav {
@@ -130,6 +130,8 @@
         &__checkbox:checked ~ &__nav > &__list {
             display: flex;
             flex-direction: column;
+            font-size: 3.6rem;
+            gap: 13rem;
     
             @include absolute-center(absolute);
         }

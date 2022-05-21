@@ -89,7 +89,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 999;
+  z-index: 1;
   position: fixed;
   width: 100%;
   padding: 1.5rem 5rem; }
@@ -155,7 +155,7 @@ body {
         top: 0.8rem; }
     .navigation__checkbox:checked + .navigation__button,
     .navigation__checkbox:checked ~ .navigation__logo {
-      z-index: 9; }
+      z-index: 1; }
     .navigation__checkbox:checked ~ .navigation__nav {
       background-color: #FCFAFD;
       min-height: 100vh;
@@ -167,6 +167,8 @@ body {
     .navigation__checkbox:checked ~ .navigation__nav > .navigation__list {
       display: flex;
       flex-direction: column;
+      font-size: 3.6rem;
+      gap: 13rem;
       position: absolute;
       top: 50%;
       left: 50%;
