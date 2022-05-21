@@ -5,7 +5,7 @@ $color-black-light: lighten($color-black, 47%);
 
 $--sub-offset: translateX(1.3rem);
 
+// Nav
 $line-of-icon-vertical-displacement: .8rem;
 $line-of-icon-height: 2px;
-
 $icon-height: calc((#{$line-of-icon-vertical-displacement} * 2) + (#{$line-of-icon-height} * 3));

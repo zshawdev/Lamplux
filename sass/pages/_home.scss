@@ -6,7 +6,7 @@
         transparent 38%), 
         url(../img/1.jpg);
     background-size: cover, 40.4%;
-    background-position: left, top right;
+    background-position: top right;
     background-repeat: no-repeat;
 
     &__text-box { 
@@ -100,7 +100,7 @@
         $color-white 51%),
         url(../img/1.jpg);
 
-        background-size: cover, cover;
+        background-size: cover;
         background-position: 50% 20%;
 
         &__text-box {
@@ -114,6 +114,4 @@
             padding-bottom: 0;
         }
     }
-
-
 }
