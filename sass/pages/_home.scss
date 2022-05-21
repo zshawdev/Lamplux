@@ -7,13 +7,13 @@
         url(../img/1.jpg);
     background-size: cover, 40.4%;
     background-position: left, top right;
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat;
 
     &__text-box { 
         position: absolute;
         top: 50%;  
-        left: 50%;
-        transform: translate(-85%, -50%); 
+        left: 35%;
+        transform: translate(-50%, -50%); 
         text-align: center;
     }
 }
@@ -39,6 +39,7 @@
         font-weight: 500;
         letter-spacing: 4.49rem;
         transform: $--sub-offset;
+        white-space: nowrap;
 
         animation-name: moveInRight;
         animation-duration: 3s;
@@ -71,22 +72,48 @@
 .btn {
     &:link,
     &:visited {
+        font-family: Open Sans;
+        font-size: 2.7rem;
+        letter-spacing: .5rem;
+        color: $color-black;
+        transition: all .2s;
+
         text-decoration: none; 
         border-bottom: 1px solid black;
         display: inline-block;
 
         animation-name: moveInBottom;
         animation-duration: 3s;  
-        
-        font-family: Open Sans;
-        font-size: 2.7rem;
-        letter-spacing: .5rem;
-        color: $color-black;
-        transition: all .2s;
     }
 
     &:hover {
         color: $color-black-light;
         border-color: $color-black-light;
     }
+}
+
+@include respond(tab-port) {
+    .header {
+        background-image: linear-gradient(to bottom, 
+        rgba(transparent, 0) 0%, 
+        rgba(transparent, 0) 20%,
+        $color-white 51%),
+        url(../img/1.jpg);
+
+        background-size: cover, cover;
+        background-position: 50% 20%;
+
+        &__text-box {
+            transform: translate(-50%, 3%);
+            left: 50%;
+        }
+    }
+
+    .heading {
+        &-primary--caption:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+
+
 }
