@@ -104,14 +104,8 @@
         background-position: 50% 20%;
 
         &__text-box {
-            transform: translate(-50%, 3%);
+            transform: translate(-50%, 16%);
             left: 50%;
-        }
-    }
-
-    .heading {
-        &-primary--caption:last-of-type {
-            padding-bottom: 0;
         }
     }
 }
