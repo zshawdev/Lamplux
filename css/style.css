@@ -49,8 +49,7 @@ html {
 
 body {
   box-sizing: border-box;
-  min-height: 100vh;
-  background-color: #FCFAFD; }
+  min-height: 100vh; }
 
 /* julius-sans-one-regular - latin */
 @font-face {
@@ -174,6 +173,9 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); } }
 
+body {
+  background-color: #FCFAFD; }
+
 .header {
   min-height: 100vh;
   background-image: linear-gradient(109deg, #fcfafd 0%, #fcfafd 66%, transparent 38%), url(../img/1.jpg);
@@ -246,3 +248,6 @@ body {
     .header__text-box {
       transform: translate(-50%, 16%);
       left: 50%; } }
+
+.article-header {
+  color: red; }

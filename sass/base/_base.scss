@@ -14,7 +14,7 @@ html {
     }
 
     @include respond(tab-port) {
-        font-size: 37.5 * 1%; //1 rem = 6px, 6/16 = 37.5%
+        font-size: 37.5%; //1 rem = 6px, 6/16 = 37.5%
     }
 
     @include respond(big-desktop) {
@@ -25,5 +25,4 @@ html {
 body {
     box-sizing: border-box;
     min-height: 100vh;
-    background-color: $color-white;
 }
