@@ -1,0 +1,34 @@
+[{
+    "type": "dialogue",
+    "en_US": {
+        "author": "Itai",
+        "text": "This week, we'll be welcoming wonderful artists every day at 12 o'clock for a Christmas edition with live performances, quizzes, and presents. Today, Monday, we're delighted to have Lamp. Good afternoon."
+    },
+    "jp": {
+        "author": "板井",
+        "text": "simple style -オヒルノオト- 今週の12時台は毎日素敵なアーティストをお迎えして、ライブあり、クイズあり、プレゼントありのクリスマス・エディションでお届けしてまいります！本日月曜日トップを飾っていただくのは、この方々。 ランプの皆さんに、お越しいただきました。こんにちは！"
+    }
+},
+{
+    "type": "aside",
+    "en_US": {
+        "author": "Lamp",
+        "text": "Good afternoon."
+    },
+    "jp": {
+        "author": "ランプ",
+        "text": "こんにちは。"
+    }
+},
+{
+    "type": "image",
+    "en_US": {
+        "author": "Itai",
+        "text": "Thank you for coming."
+    },
+    "jp": {
+        "author": "板井",
+        "text": "ようこそ、ありがとうございます。"
+    }
+}
+]

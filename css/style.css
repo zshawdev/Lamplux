@@ -84,6 +84,9 @@ body {
 .u-margin-top {
   margin-top: 3rem !important; }
 
+.u-display-block {
+  display: block !important; }
+
 .navigation {
   display: flex;
   align-items: center;
@@ -250,4 +253,60 @@ body {
       left: 50%; } }
 
 .article-header {
-  color: red; }
+  height: 72vh;
+  background-image: linear-gradient(109deg, #fcfafd 0%, #fcfafd 66%, transparent 38%), url(../img/1.jpg);
+  background-size: cover, 40.4%;
+  background-position: top right;
+  background-repeat: no-repeat; }
+  .article-header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -85%);
+    text-align: center; }
+    .article-header__text-box > * {
+      display: block; }
+
+.article-heading-primary {
+  font-family: Julius Sans One; }
+  .article-heading-primary > * {
+    display: block; }
+  .article-heading-primary--main {
+    font-size: 7rem;
+    letter-spacing: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem; }
+  .article-heading-primary--sub {
+    font-size: 1.7rem;
+    letter-spacing: 1.14rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem; }
+
+.article-heading-date {
+  font-family: Open Sans;
+  font-size: 1.6rem;
+  letter-spacing: .366rem;
+  font-weight: 400; }
+
+.article-interview-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Open Sans;
+  font-size: 1.6rem; }
+
+.dialogue-box {
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  line-height: 2;
+  width: 69rem; }
+
+.dialogue-author {
+  text-align: right;
+  color: #a6a6a6; }
+
+.dialogue-text {
+  width: 58.5rem; }
