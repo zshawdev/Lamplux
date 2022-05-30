@@ -87,34 +87,34 @@ body {
 .u-display-block {
   display: block !important; }
 
-.interview {
+.section-interview {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Open Sans;
   font-size: 1.6rem;
   margin-top: 3rem; }
-  .interview__article-block {
+  .section-interview__article-block {
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
     line-height: 2;
     width: 69rem; }
-    .interview__article-block--dialogue {
+    .section-interview__article-block--dialogue {
       display: flex;
       justify-content: flex-end;
       gap: 2rem; }
-    .interview__article-block--context {
+    .section-interview__article-block--context {
       text-align: center; }
-    .interview__article-block--image {
+    .section-interview__article-block--image {
       text-align: center; }
-  .interview__dialogue-author {
+  .section-interview__dialogue-author {
     text-align: right;
     color: #a6a6a6; }
-  .interview__dialogue-text {
+  .section-interview__dialogue-text {
     width: 58.5rem; }
-  .interview__context-text {
+  .section-interview__context-text {
     font-style: italic; }
-  .interview__image {
+  .section-interview__image {
     height: 100%;
     max-height: 34rem;
     border-radius: .5rem; }
