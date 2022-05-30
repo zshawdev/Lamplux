@@ -329,3 +329,9 @@ body {
   font-size: 1.6rem;
   letter-spacing: .366rem;
   font-weight: 400; }
+
+@media (max-width: 56.25em) {
+  .article-header {
+    height: 47vh; }
+    .article-header__text-box {
+      transform: translate(-50%, -157%); } }
