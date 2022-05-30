@@ -9,6 +9,8 @@
 
     padding: 1.5rem 5rem;
 
+    background-color: $color-white;
+
     &__logo {
         &:link,
         &:visited {
@@ -136,4 +138,18 @@
             @include absolute-center(absolute);
         }
     }
+}
+
+// Scroll Behavior
+
+.scrolled-down, .scrolled-up {
+    transition: all 0.5s ease-in-out;
+}
+
+.scrolled-down {
+    transform:translateY(-100%); 
+  }
+  
+.scrolled-up {
+    transform:translateY(0); 
 }
