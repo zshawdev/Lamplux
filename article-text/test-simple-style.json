@@ -10,25 +10,17 @@
     }
 },
 {
-    "type": "aside",
+    "type": "context",
     "en_US": {
-        "author": "Lamp",
-        "text": "Good afternoon."
+        "text": "Test text for context."
     },
     "jp": {
-        "author": "ランプ",
         "text": "こんにちは。"
     }
 },
 {
     "type": "image",
-    "en_US": {
-        "author": "Itai",
-        "text": "Thank you for coming."
-    },
-    "jp": {
-        "author": "板井",
-        "text": "ようこそ、ありがとうございます。"
-    }
+    "srcLink": "/img/simple-style-nagai-frame.jpg",
+    "alt": "Lamp & friends around a table."
 }
 ]
