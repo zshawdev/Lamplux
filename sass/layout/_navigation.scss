@@ -142,7 +142,7 @@
 
 // Scroll Behavior
 
-.scrolled-down, .scrolled-up {
+.scrolled-down, .scrolled-up, .page-top {
     transition: all 0.5s ease-in-out;
 }
 
@@ -151,6 +151,5 @@
   }
   
 .scrolled-up {
-    // transform:translateY(0); 
     transform: initial;
 }

@@ -55,6 +55,7 @@
     @include respond(tab-port) {
         &-header {
             height: 47vh;
+            background-position: 100% -21%;
 
             &__text-box {
                 transform: translate(-50%, -157%);

@@ -209,7 +209,7 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); } }
 
-.scrolled-down, .scrolled-up {
+.scrolled-down, .scrolled-up, .page-top {
   transition: all 0.5s ease-in-out; }
 
 .scrolled-down {
@@ -332,6 +332,7 @@ body {
 
 @media (max-width: 56.25em) {
   .article-header {
-    height: 47vh; }
+    height: 47vh;
+    background-position: 100% -21%; }
     .article-header__text-box {
       transform: translate(-50%, -157%); } }

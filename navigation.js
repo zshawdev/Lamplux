@@ -29,11 +29,11 @@ let prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
-    document.getElementById("navigation").classList.remove('scrolled-down');
-    document.getElementById("navigation").classList.add('scrolled-up')
+    document.getElementById("navigation").classList.remove("scrolled-down");
+    document.getElementById("navigation").classList.add("scrolled-up")
   } else {
-    document.getElementById("navigation").classList.add('scrolled-down');
-    document.getElementById("navigation").classList.remove('scrolled-up')
+    document.getElementById("navigation").classList.add("scrolled-down");
+    document.getElementById("navigation").classList.remove("scrolled-up")
   }
   prevScrollPos = currentScrollPos;
 }
