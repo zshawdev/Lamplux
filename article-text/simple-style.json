@@ -829,7 +829,7 @@
         "type": "dialogue",
         "en_US": {
             "author": "Nagai",
-            "text": "Because they both like manga very much. What I particularly like is the world of Yoshiharu Tsuge. When I was a university student, I borrowed a copy and read it, and at the time—I think there are all sorts of different types of manga, but there's the kind that's more like art, and then there's the kind where Yoshiharu Tsuge himself appears. I like it because it's really interesting, and the images of Japan that appear in it, which we don't have much of now, are really something. It's like the image of Japan from the 70's. Maybe it's something like \"Waiting for the Wind\" from Happy End. I'm really attracted to that kind of image of Japan that doesn't exist anymore. When we were forming the band—how should I put it?"
+            "text": "Because they both like manga very much. What I particularly like is the world of Yoshiharu Tsuge. When I was a university student, I borrowed a copy and read it, and at the time—I think there are all sorts of different types of manga, but there's the kind that's more like art, and then there's the kind where Yoshiharu Tsuge himself appears. I like it because it's really interesting, and the images of Japan that appear in it, which we don't have much of now, are really something. It's like the image of Japan from the 70's. Maybe it's something like \"Waiting for the Wind\" from Happy End. I'm really attracted to that kind of image of Japan that doesn't exist anymore. When we were forming the band—how should I put it...?"
         },
         "jp": {
             "author": "永井",
@@ -1142,6 +1142,15 @@
         "jp": {
             "author": "染谷",
             "text": "最新作の「ゆめ」からA都市の秋という曲をお願いします。"
+        }
+    },
+    {
+        "type": "context",
+        "en_US": {
+            "text": "—Excerpt of \"A Toshi No Aki\" plays—"
+        },
+        "jp": {
+            "text": "「夜会にて」と「Fantasy」を演る"
         }
     },
     {

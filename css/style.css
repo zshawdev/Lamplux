@@ -216,7 +216,7 @@ body {
   transform: translateY(-100%); }
 
 .scrolled-up {
-  transform: translateY(0); }
+  transform: initial; }
 
 body {
   background-color: #FCFAFD; }
