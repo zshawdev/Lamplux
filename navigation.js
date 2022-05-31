@@ -25,15 +25,31 @@ customElements.define("nav-bar", NavBar)
 
 // Scroll Behavior
 
+let navigation = document.getElementById("navigation");
+
+//Nav Opacity
+
+let opacityValue = 0;
+navigation.style.backgroundColor = `rgba(252, 250, 253, ${opacityValue})`
+const currentPageHeaderHeight = document.getElementById("article-header").clientHeight;
+
+window.addEventListener('scroll', () => {
+    opacityValue = (window.pageYOffset / currentPageHeaderHeight);
+    navigation.style.backgroundColor = `rgba(252, 250, 253, ${opacityValue})`;
+});
+
+//Nav Offset
+
 let prevScrollPos = window.pageYOffset;
-window.onscroll = function() {
+
+window.addEventListener('scroll', () => {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
-    document.getElementById("navigation").classList.remove("scrolled-down");
-    document.getElementById("navigation").classList.add("scrolled-up")
+    navigation.classList.remove("scrolled-down");
+    navigation.classList.add("scrolled-up")
   } else {
-    document.getElementById("navigation").classList.add("scrolled-down");
-    document.getElementById("navigation").classList.remove("scrolled-up")
+    navigation.classList.add("scrolled-down");
+    navigation.classList.remove("scrolled-up")
   }
   prevScrollPos = currentScrollPos;
-}
+});

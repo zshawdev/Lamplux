@@ -126,8 +126,7 @@ body {
   z-index: 1;
   position: fixed;
   width: 100%;
-  padding: 1.5rem 5rem;
-  background-color: #FCFAFD; }
+  padding: 1.5rem 5rem; }
   .navigation__logo:link, .navigation__logo:visited {
     color: #000;
     text-decoration: none;
@@ -210,7 +209,7 @@ body {
       transform: translate(-50%, -50%); } }
 
 .scrolled-down, .scrolled-up, .page-top {
-  transition: all 0.5s ease-in-out; }
+  transition: transform 0.5s ease-in-out; }
 
 .scrolled-down {
   transform: translateY(-100%); }
@@ -332,7 +331,6 @@ body {
 
 @media (max-width: 56.25em) {
   .article-header {
-    height: 47vh;
-    background-position: 100% -21%; }
+    height: 47vh; }
     .article-header__text-box {
       transform: translate(-50%, -157%); } }
