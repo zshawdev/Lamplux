@@ -1,0 +1,83 @@
+.card {
+    &:link, 
+    &:visited {
+        display: flex;
+        text-align: center;
+        height: 16rem;
+        width: 55.7rem;
+        border-radius: .5rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
+        cursor: pointer;
+        text-decoration: none;
+        color: $color-black;
+    }
+
+    &__pane-top {
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        width: 66%;
+        transition: color .5s;
+    }
+
+    &__pane-bottom {
+        width: 34%;
+        background-size: cover;
+        position: relative;
+
+        &--simple-style {
+            background-position: bottom;
+            background-image: url(../img/3.jpg);
+        }
+
+        &--tower-records {
+            background-image: url(../img/2.jpg);
+        }
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $color-white;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+    }
+
+    &__heading {
+        display: inherit;
+        flex-direction: column;
+        font-family: Julius Sans One; 
+        font-weight: 400;
+        padding-bottom: 1rem;
+
+        &--main {
+            font-size: 4.2rem;
+            letter-spacing: .84rem;
+            margin-bottom: .6rem;
+        }
+
+        &--sub {
+            font-size: 1rem;
+            letter-spacing: .67rem 
+        }
+    }
+
+    &__date {
+        font-family: Open Sans;
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+
+    &:hover &__pane-top {
+        color: $color-black-light;
+    }
+
+    &:hover &__pane-bottom::before {
+        opacity: .6;
+    }
+}

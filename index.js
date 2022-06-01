@@ -12,12 +12,12 @@ app.get("/simple-style", (req, res) => {
     res.sendFile(path.join(__dirname, "/simple-style.html"));
 })
 
-app.get("/simple-style", (req, res) => {
+app.get("/tower-records", (req, res) => {
     res.sendFile(path.join(__dirname, "/tower-records.html"));
 })
 
-app.get("/nav.js", (req, res) => {
-    res.sendFile(path.join(__dirname, "/nav.js"));
+app.get("/interviews", (req, res) => {
+    res.sendFile(path.join(__dirname, "/interviews.html"));
 })
 
 app.get("*", (req, res) => {

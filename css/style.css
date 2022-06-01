@@ -87,6 +87,70 @@ body {
 .u-display-block {
   display: block !important; }
 
+.card:link, .card:visited {
+  display: flex;
+  text-align: center;
+  height: 16rem;
+  width: 55.7rem;
+  border-radius: .5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000; }
+
+.card__pane-top {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  width: 66%;
+  transition: color .5s; }
+
+.card__pane-bottom {
+  width: 34%;
+  background-size: cover;
+  position: relative; }
+  .card__pane-bottom--simple-style {
+    background-position: bottom;
+    background-image: url(../img/3.jpg); }
+  .card__pane-bottom--tower-records {
+    background-image: url(../img/2.jpg); }
+  .card__pane-bottom::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FCFAFD;
+    opacity: 0;
+    transition: opacity .5s; }
+
+.card__heading {
+  display: inherit;
+  flex-direction: column;
+  font-family: Julius Sans One;
+  font-weight: 400;
+  padding-bottom: 1rem; }
+  .card__heading--main {
+    font-size: 4.2rem;
+    letter-spacing: .84rem;
+    margin-bottom: .6rem; }
+  .card__heading--sub {
+    font-size: 1rem;
+    letter-spacing: .67rem; }
+
+.card__date {
+  font-family: Open Sans;
+  font-size: 1.2rem;
+  letter-spacing: .1rem; }
+
+.card:hover .card__pane-top {
+  color: #787878; }
+
+.card:hover .card__pane-bottom::before {
+  opacity: .6; }
+
 .section-interview {
   display: flex;
   flex-direction: column;
@@ -292,6 +356,25 @@ body {
     .header__text-box {
       transform: translate(-50%, 16%);
       left: 50%; } }
+
+.select-interview-main {
+  min-height: 100vh;
+  padding-top: 10rem; }
+
+.select-interview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem; }
+
+.header-interviews-h1 {
+  font-family: Open Sans;
+  font-size: 3rem;
+  letter-spacing: .6rem;
+  font-weight: 400;
+  margin-bottom: 4.5rem;
+  text-align: center; }
 
 .article-header {
   height: 72vh;
