@@ -1,14 +1,26 @@
 .article {
     &-header {
         height: 72vh;
-        background-image: linear-gradient(109deg, 
+        background-size: cover, 40.4%;
+        background-repeat: no-repeat;
+
+        &--tower-records {
+            background-image: linear-gradient(109deg, 
             #fcfafd 0%, 
             #fcfafd 66%,  
             transparent 38%), 
-            url(../img/1.jpg);
-        background-size: cover, 40.4%;
-        background-position: top right;
-        background-repeat: no-repeat;
+            url(../img/2.jpg);
+            background-position: top right;
+        }
+
+        &--simple-style {
+            background-image: linear-gradient(109deg, 
+            #fcfafd 0%, 
+            #fcfafd 66%,  
+            transparent 38%), 
+            url(../img/3.jpg);
+            background-position: 100% 100%;
+        }
     
         &__text-box { 
             position: absolute;
@@ -53,11 +65,33 @@
     }
 
     @include respond(tab-port) {
-        &-header {
-            height: 47vh;
+        &-header--simple-style {
+            background-image: linear-gradient(to bottom, 
+            rgba(transparent, 0) 0%, 
+            rgba(transparent, 0) 20%,
+            $color-white 51%),
+            url(../img/3.jpg);
+            background-size: cover;
+            background-position: 100% 193%;
 
             &__text-box {
-                transform: translate(-50%, -157%);
+                transform: translate(-50%, 16%);
+                left: 50%;
+            }
+        }
+
+        &-header--tower-records {
+            background-image: linear-gradient(to bottom, 
+            rgba(transparent, 0) 0%, 
+            rgba(transparent, 0) 20%,
+            $color-white 51%),
+            url(../img/2.jpg);
+            background-size: cover;
+            background-position: 100% 100%;
+
+            &__text-box {
+                transform: translate(-50%, 16%);
+                left: 50%;
             }
         }
     }
