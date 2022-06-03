@@ -7,7 +7,7 @@ class NavBar extends HTMLElement {
       
         <a href="#" class="navigation__logo">
           <span class="navigation__logo--primary">LAMPLUX</span>
-          <span class="navigation__logo--sub">ランプ・ルクス</span>
+          <span class="navigation__logo--secondary">ランプ・ルクス</span>
         </a>
       
         <nav class="navigation__nav">

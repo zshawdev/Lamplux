@@ -1,60 +1,60 @@
-const sectionInterview = document.querySelector("#section-interview");
-let articleTextJSON;
+const sectionTextArticle = document.querySelector("#section-text-article");
+let textArticleTranscipt;
 
 /// Interview Generating via JSON
 
 const fetchInterview = async() => {
-    const res = await fetch("article-text/simple-style.json");
+    const res = await fetch("text-article-transcripts/simple-style.json");
     const data = await res.json();
-    articleTextJSON = data;
-    generateArticleBlocks(articleTextJSON);
+    textArticleTranscipt = data;
+    generatetextArticleBlocks(textArticleTranscipt);
 }
 
 fetchInterview();
 
-const generateArticleBlocks = (articleTextJSON) => {
-    const max = Object.keys(articleTextJSON).length;
+const generatetextArticleBlocks = (textArticleTranscipt) => {
+    const max = Object.keys(textArticleTranscipt).length;
     for (i = 0; i <= max; i++) {
-        articleBlock = document.createElement("div");
-        articleBlock.classList.add("section-interview__article-block");
+        textArticleBlock = document.createElement("div");
+        textArticleBlock.classList.add("section-text-article__text-article-block");
         
-        if (articleTextJSON[i].type === "dialogue") {
-            articleBlock.classList.add("section-interview__article-block--dialogue");
-            sectionInterview.append(articleBlock);
+        if (textArticleTranscipt[i].type === "dialogue") {
+            textArticleBlock.classList.add("section-text-article__text-article-block--dialogue");
+            sectionTextArticle.append(textArticleBlock);
 
             const span = document.createElement("span");
-            span.classList.add("section-interview__dialogue-author");
-            const author = eval(`articleTextJSON[${i}].en_US.author`);
+            span.classList.add("section-text-article__dialogue-author");
+            const author = eval(`textArticleTranscipt[${i}].en_US.author`);
             span.innerHTML = author;
-            articleBlock.append(span);
+            textArticleBlock.append(span);
 
             const p = document.createElement("p");
-            p.classList.add("section-interview__dialogue-text");
-            const text = eval(`articleTextJSON[${i}].en_US.text`);
+            p.classList.add("section-text-article__dialogue-text");
+            const text = eval(`textArticleTranscipt[${i}].en_US.text`);
             p.innerHTML = text;
-            articleBlock.append(p);
+            textArticleBlock.append(p);
         }
 
-        else if (articleTextJSON[i].type === "context") {
-            articleBlock.classList.add("section-interview__article-block--context");
-            sectionInterview.append(articleBlock);
+        else if (textArticleTranscipt[i].type === "context") {
+            textArticleBlock.classList.add("section-text-article__text-article-block--context");
+            sectionTextArticle.append(textArticleBlock);
             const span = document.createElement("span");
-            span.classList.add("section-interview__context-text");
-            const text = eval(`articleTextJSON[${i}].en_US.text`);
+            span.classList.add("section-text-article__context-text");
+            const text = eval(`textArticleTranscipt[${i}].en_US.text`);
             span.innerHTML = text;
-            articleBlock.append(span);
+            textArticleBlock.append(span);
         }
 
-        else if (articleTextJSON[i].type === "image") {
-            articleBlock.classList.add("section-interview__article-block--image");
-            sectionInterview.append(articleBlock);
+        else if (textArticleTranscipt[i].type === "image") {
+            textArticleBlock.classList.add("section-text-article__text-article-block--image");
+            sectionTextArticle.append(textArticleBlock);
             const img = document.createElement("img");
-            img.classList.add("section-interview__image");
-            const srcLink = eval(`articleTextJSON[${i}].srcLink`);
+            img.classList.add("section-text-article__image");
+            const srcLink = eval(`textArticleTranscipt[${i}].srcLink`);
             img.src = srcLink;
-            const alt = eval(`articleTextJSON[${i}].alt`);
+            const alt = eval(`textArticleTranscipt[${i}].alt`);
             img.alt = alt;
-            articleBlock.append(img);
+            textArticleBlock.append(img);
         }
     }
 }
