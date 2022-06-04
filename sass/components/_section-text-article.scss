@@ -1,0 +1,56 @@
+.section-text-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Open Sans;
+    font-size: 1.6rem;
+
+    padding: 3rem 1rem;
+
+    &__text-article-block {
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
+        line-height: 2;
+        max-width: 69rem;
+        width: 100%;
+
+        &--dialogue {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+
+        &--context {
+            text-align: center;
+        }
+
+        &--image {
+            text-align: center;
+        }
+    }
+
+    &__dialogue-author {
+        flex: 1;
+        text-align: right;
+        color: lighten($color-black, 65%);
+    }
+
+    &__dialogue-text {
+        flex: 6;
+
+        @include respond(phone) {
+            flex: 5;
+        }
+    }
+
+    &__context-text {
+        font-style: italic;
+    }
+
+    &__image {
+        height: 100%;
+        max-height: 34rem;
+        border-radius: .5rem;
+    }
+}

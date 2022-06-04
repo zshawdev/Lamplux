@@ -1,0 +1,17 @@
+.section-interviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.heading-interviews {
+    font-family: Open Sans;
+    font-size: 3rem;
+    letter-spacing: .6rem;
+    font-weight: 400;
+    padding-top: 10rem;
+    margin-bottom: 4.5rem;
+    text-align: center;
+}

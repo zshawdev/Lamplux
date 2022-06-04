@@ -29,7 +29,7 @@
             letter-spacing: .56rem;
         }
 
-        &--sub {
+        &--secondary {
             font-size: 1.12rem;
             letter-spacing: 1.397rem;
             transform: translateX(0.5rem);
@@ -71,7 +71,7 @@
     }
 
 
-    // Mobile
+    // Responsiveness
 
     @include respond(tab-port) {
         &__list {
@@ -93,7 +93,7 @@
             &::before,
             &::after {
                 width: 3rem;
-                height: $line-of-icon-height;
+                height: $icon-line-height;
                 background-color: $color-black;
                 display: inline-block;
             }
@@ -106,11 +106,11 @@
             }
     
             &::before { 
-                top: -($line-of-icon-vertical-displacement);
+                top: -($icon-line-vertical-displacement);
             }
     
             &::after { 
-                top: $line-of-icon-vertical-displacement;
+                top: $icon-line-vertical-displacement;
             }
         }
           
@@ -136,4 +136,18 @@
             @include absolute-center(absolute);
         }
     }
+}
+
+// Scroll Behavior
+
+.scrolled-down, .scrolled-up {
+    transition: transform 0.5s ease-in-out;
+}
+
+.scrolled-down {
+    transform:translateY(-100%); 
+  }
+  
+.scrolled-up {
+    transform: initial;
 }

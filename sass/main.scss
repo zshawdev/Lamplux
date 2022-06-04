@@ -7,6 +7,11 @@
 @import "base/typography";
 @import "base/utilities"; 
 
+@import "components/card";
+@import "components/section-text-article";
+
 @import "layout/navigation";
 
 @import "pages/home"; 
+@import "pages/interviews";
+@import "pages/tower-records";
