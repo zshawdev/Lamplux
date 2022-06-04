@@ -3,8 +3,11 @@ let textArticleTranscipt;
 
 /// Interview Generating via JSON
 
+const textArticleHtmlScript = document.getElementById("text-article-html-script");
+const textArticleTranscriptSource = textArticleHtmlScript.getAttribute("data-text-article-transcript-source");
+
 const fetchInterview = async() => {
-    const res = await fetch("text-article-transcripts/simple-style.json");
+    const res = await fetch(textArticleTranscriptSource);
     const data = await res.json();
     textArticleTranscipt = data;
     generatetextArticleBlocks(textArticleTranscipt);
