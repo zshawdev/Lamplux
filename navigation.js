@@ -63,13 +63,6 @@ if (navigationCheckbox.checked === true) {
 });
 
 window.addEventListener('resize', () => {
-<<<<<<< HEAD
     navigationCheckbox.checked = false;
     webPageBody.style.overflow = "initial";
-=======
-  if (window.innerWidth > 900) {
-    navigationCheckbox.checked = false;
-    webPageBody.style.overflow = "initial";
-  }
->>>>>>> master
 });
