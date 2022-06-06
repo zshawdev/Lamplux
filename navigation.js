@@ -53,3 +53,21 @@ window.addEventListener('scroll', () => {
   }
   prevScrollPos = currentScrollPos;
 });
+
+//Disable Scroll on Checked
+
+let navigationCheckbox = document.getElementById("navigation-checkbox");
+let webPageBody = document.querySelector("body");
+
+navigationCheckbox.addEventListener('click', () => {
+if (navigationCheckbox.checked === true) {
+  webPageBody.style.overflow = "hidden";
+} else {
+  webPageBody.style.overflow = "initial";
+}
+});
+
+window.addEventListener('resize', () => {
+    navigationCheckbox.checked = false;
+    webPageBody.style.overflow = "initial";
+});
