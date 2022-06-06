@@ -1,7 +1,7 @@
 class NavBar extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
+        this.innerHTML = `<input type="checkbox" class="navigation__checkbox" id="navigation-checkbox">
+        <label for="navigation-checkbox" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
       
@@ -23,14 +23,10 @@ class NavBar extends HTMLElement {
 }
 customElements.define("nav-bar", NavBar)
 
-// Scroll Behavior
-
-let navigation = document.getElementById("navigation");
-
 //Nav Opacity
 
+let navigation = document.getElementById("navigation");
 let opacityValue = 0;
-navigation.style.backgroundColor = `rgba(252, 250, 253, ${opacityValue})`
 const currentPageHeaderHeight = document.getElementById("article-header").clientHeight;
 
 window.addEventListener('scroll', () => {
@@ -38,10 +34,9 @@ window.addEventListener('scroll', () => {
     navigation.style.backgroundColor = `rgba(252, 250, 253, ${opacityValue})`;
 });
 
-//Nav Offset
+//Show / Hide on Scroll Direction
 
 let prevScrollPos = window.pageYOffset;
-
 window.addEventListener('scroll', () => {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
@@ -52,4 +47,24 @@ window.addEventListener('scroll', () => {
     navigation.classList.remove("scrolled-up")
   }
   prevScrollPos = currentScrollPos;
+});
+
+//Disable Scroll on Checked
+
+let navigationCheckbox = document.getElementById("navigation-checkbox");
+let webPageBody = document.querySelector("body");
+
+navigationCheckbox.addEventListener('click', () => {
+if (navigationCheckbox.checked === true) {
+  webPageBody.style.overflow = "hidden";
+} else {
+  webPageBody.style.overflow = "initial";
+}
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900) {
+    navigationCheckbox.checked = false;
+    webPageBody.style.overflow = "initial";
+  }
 });
