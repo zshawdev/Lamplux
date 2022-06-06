@@ -1,13 +1,13 @@
 class NavBar extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
+        this.innerHTML = `<input type="checkbox" class="navigation__checkbox" id="navigation-checkbox">
+        <label for="navigation-checkbox" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
       
         <a href="#" class="navigation__logo">
           <span class="navigation__logo--primary">LAMPLUX</span>
-          <span class="navigation__logo--sub">ランプ・ルクス</span>
+          <span class="navigation__logo--secondary">ランプ・ルクス</span>
         </a>
       
         <nav class="navigation__nav">
@@ -23,14 +23,10 @@ class NavBar extends HTMLElement {
 }
 customElements.define("nav-bar", NavBar)
 
-// Scroll Behavior
-
-let navigation = document.getElementById("navigation");
-
 //Nav Opacity
 
+let navigation = document.getElementById("navigation");
 let opacityValue = 0;
-navigation.style.backgroundColor = `rgba(252, 250, 253, ${opacityValue})`
 const currentPageHeaderHeight = document.getElementById("article-header").clientHeight;
 
 window.addEventListener('scroll', () => {
@@ -38,10 +34,9 @@ window.addEventListener('scroll', () => {
     navigation.style.backgroundColor = `rgba(252, 250, 253, ${opacityValue})`;
 });
 
-//Nav Offset
+//Show / Hide on Scroll Direction
 
 let prevScrollPos = window.pageYOffset;
-
 window.addEventListener('scroll', () => {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
@@ -68,6 +63,13 @@ if (navigationCheckbox.checked === true) {
 });
 
 window.addEventListener('resize', () => {
+<<<<<<< HEAD
     navigationCheckbox.checked = false;
     webPageBody.style.overflow = "initial";
+=======
+  if (window.innerWidth > 900) {
+    navigationCheckbox.checked = false;
+    webPageBody.style.overflow = "initial";
+  }
+>>>>>>> master
 });
