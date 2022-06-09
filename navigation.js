@@ -5,16 +5,16 @@ class NavBar extends HTMLElement {
             <span class="navigation__icon">&nbsp;</span>
         </label>
       
-        <a href="#" class="navigation__logo">
+        <a href="/" class="navigation__logo">
           <span class="navigation__logo--primary">LAMPLUX</span>
           <span class="navigation__logo--secondary">ランプ・ルクス</span>
         </a>
       
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link">Interviews</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">More Lamp</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">GoFundMe</a></li>
+            <li class="navigation__item"><a href="/interviews.html" class="navigation__link">Interviews</a></li>
+            <li class="navigation__item"><a href="https://linktr.ee/lampjapan" target=”_blank” class="navigation__link">More Lamp</a></li>
+            <li class="navigation__item"><a href="https://www.gofundme.com/f/transcribe-lamp-interviews" target=”_blank” class="navigation__link">GoFundMe</a></li>
             <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
           </ul>
         </nav>
