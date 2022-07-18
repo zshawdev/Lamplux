@@ -296,16 +296,18 @@ body {
   background-position: top right;
   background-repeat: no-repeat; }
   .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+    padding-right: 41rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
     text-align: center; }
 
 .heading {
-  font-family: Julius Sans One; }
-  .heading > * {
-    display: block; }
+  font-family: Julius Sans One;
+  display: flex;
+  flex-direction: column; }
   .heading__primary {
     font-size: 9rem;
     font-weight: 300;
